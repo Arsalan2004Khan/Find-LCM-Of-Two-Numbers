@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #222;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#main {
+    background: #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    animation: burn 1.5s infinite alternate;
+}
+
+#promt1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    animation: textBurn 1.5s infinite alternate;
+}
+
+input {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 300px;
+    box-sizing: border-box;
+    background: #555;
+    color: #fff;
+    animation: backgroundAnimation 2s infinite alternate;
+}
+
+button {
+    padding: 15px 30px;
+    background: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff5a2b;
+}
+
+#iResult {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #e44d26;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #333;
+}
+
+@keyframes burn {
+    0% { background: #333; box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); }
+    100% { background: #e44d26; box-shadow: 0 0 40px rgba(255, 255, 255, 0.3); }
+}
+
+@keyframes backgroundAnimation {
+    0% { background: #555; }
+    100% { background: #777; }
+}
+
+@keyframes textBurn {
+    0% { color: #ffffff; }
+    100% { color: #ffffff; }
+}
